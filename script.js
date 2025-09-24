@@ -1,4 +1,4 @@
-// script.js
+
 let notes = document.querySelectorAll('.note');
 let noteSpeed = 5; // Controle da velocidade das notas
 
