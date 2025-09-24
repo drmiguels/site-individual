@@ -1,5 +1,7 @@
+/* style.css */
 body {
-    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,30 +9,27 @@ body {
     margin: 0;
 }
 
-#game-container {
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 500px;
     position: relative;
-    width: 400px;
-    height: 600px;
-    background-color: black;
-    border: 2px solid white;
 }
 
 .note {
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 50px;
-    height: 50px;
+    height: 100px;
     background-color: red;
-    transform: translateX(-50%);
-    animation: drop 5s linear infinite;
+    border-radius: 5px;
+    position: absolute;
+    top: -120px;
+    transition: top 1s;
 }
 
-@keyframes drop {
-    from {
-        top: 0;
-    }
-    to {
-        top: 100%;
-    }
-}
+#note1 { left: 10%; }
+#note2 { left: 20%; }
+#note3 { left: 30%; }
+#note4 { left: 40%; }
+#note5 { left: 50%; }
+
